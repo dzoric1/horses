@@ -1,0 +1,40 @@
+.header__title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .header__title {
+    font-size: 32px;
+  }
+}
+
+.header__logo {
+  width: 86px;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 9px 40px 0 40px;
+  gap: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+    gap: 12px;
+  }
+}

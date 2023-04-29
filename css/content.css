@@ -1,0 +1,17 @@
+.content {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    justify-content: center;
+  }
+}
+
+.content__form {
+  z-index: 2;
+}

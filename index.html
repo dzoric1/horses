@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Сайт для коней</title>
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <h1 class="header__title">САЙТ ДЛЯ КОНЕЙ</h1>
+      <img class="header__logo" src="./img/logo.png" alt="Логотип">
+    </header>
+    <main class="content">
+      <canvas class="tag-cloud" id="canvas"></canvas>
+      <form class="content__form form" name="login">
+        <label class="form__field">
+          <input class="form__input" type="text" name="login" required
+            placeholder="Электронный адрес или номер телефона">
+        </label>
+        <label class="form__field">
+          <input class="form__input" type="password" name="password" required placeholder="Пароль">
+        </label>
+        <button class="form__submit button button_disabled" type="submit" disabled>Вход</button>
+        <a class="form__link" href="#" target="_blank">Забыли пароль?</a>
+        <button class="form__button button" type="button">Создать новый аккаунт</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <nav>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Meta</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Информация</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Блог</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Вакансии</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Помощь</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">API</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Конфиденциальность</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Условия</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Популярные аккаунты</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Места</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="#" target="_blank">Instagram Lite</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button" aria-label="Закрыть попап"></button>
+        <h2 class="popup__title">Регистрация</h2>
+        <form class="popup__form" name="register">
+          <div class="form__row">
+            <input class="form__input" type="text" name="firstname" required placeholder="Имя">
+            <input class="form__input" type="text" name="lastname" required placeholder="Фамилия">
+          </div>
+          <input class="form__input" type="text" name="login" required
+            placeholder="Электронный адрес или номер телефона">
+          <input class="form__input" type="password" name="password" required placeholder="Новый пароль">
+          <input class="form__input" type="password" name="repeat-password" required placeholder="Повторите пароль">
+          <span class="form__label-title">Дата рождения</span>
+          <div class="form__row">
+            <div class="select-wrapper">
+              <select class="form__select" name="" id="">
+                <option class="form__select-option" disabled selected value="">Дата</option>
+                <option class="form__select-option" value="1">1</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select class="form__select" name="" id="">
+                <option class="form__select-option" disabled selected value="">Месяц</option>
+                <option class="form__select-option" value="2">Сентябрь</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select class="form__select" name="" id="">
+                <option class="form__select-option" disabled selected value="">Год</option>
+                <option class="form__select-option" value="2">2000</option>
+              </select>
+            </div>
+          </div>
+          <span class="form__label-title">Пол</span>
+          <div class="form__row">
+            <div class="radio-wrapper">
+              <input class="radio__input" type="radio" name="my-radio" value="option-1" id="radio-1">
+              <label for="radio-1" class="radio">Женщина</label>
+            </div>
+            <div class="radio-wrapper">
+              <input class="radio__input" type="radio" name="my-radio" value="option-2" id="radio-2">
+              <label for="radio-2" class="radio">Мужчина</label>
+            </div>
+            <div class="radio-wrapper">
+              <input class="radio__input" type="radio" name="my-radio" value="option-3" id="radio-3">
+              <label for="radio-3" class="radio">Не указывать</label>
+            </div>
+          </div>
+          <p class="form__text">Люди, которые пользуются нашим сервисом, могли загрузить вашу контактную информацию в
+            Instagram. Подробнее
+          </p>
+          <p class="form__text">Регистрируясь, вы принимаете наши Условия, Политику конфиденциальности и Политику в
+            отношении файлов cookie.
+          </p>
+          <button class="form__submit button" type="submit">Регистрация</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
